@@ -8,11 +8,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - BackGround
   - Water
   - UI
-  - 
-  - 
+  - Ball & Platform
+  - Destructable Objects
   - 
   - 
   - 
