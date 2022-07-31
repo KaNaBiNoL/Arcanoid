@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5789611762801603284}
   - component: {fileID: 1588328470805507726}
-  - component: {fileID: 2839383819013448288}
   - component: {fileID: 7494182595425913037}
+  - component: {fileID: 8629775618239519130}
   m_Layer: 0
   m_Name: RectStoneBlock
   m_TagString: Untagged
@@ -86,18 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2839383819013448288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4468312606177784250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7dbf317db0f8c340abaee6a11f6b3d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &7494182595425913037
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -124,3 +112,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8629775618239519130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4468312606177784250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02ebc5ae08a68b48ac786850f71cfdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _middleHpSprite: {fileID: 21300000, guid: 374d2623406de4690b073530dcccca3a, type: 3}
+  _lowHpSprite: {fileID: 21300000, guid: c5c304863b95944e4bcd39f34b8d50b8, type: 3}

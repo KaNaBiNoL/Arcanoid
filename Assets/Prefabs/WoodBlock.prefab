@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3110974471233627129}
   - component: {fileID: 3110974471233627135}
   - component: {fileID: 3110974471233627128}
-  - component: {fileID: 2912606664721424200}
+  - component: {fileID: -577517346367289208}
   m_Layer: 0
   m_Name: WoodBlock
   m_TagString: Untagged
@@ -112,7 +112,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2912606664721424200
+--- !u!114 &-577517346367289208
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,6 +121,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3110974471233627130}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7dbf317db0f8c340abaee6a11f6b3d0, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c94d2aeebb812542b50c6e773b974dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

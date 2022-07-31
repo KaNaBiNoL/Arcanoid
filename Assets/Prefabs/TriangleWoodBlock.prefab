@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5525066171473666612}
   - component: {fileID: 377316620364824199}
   - component: {fileID: 4568595897504909977}
-  - component: {fileID: 2482437466755443605}
+  - component: {fileID: 6094141448614656172}
   m_Layer: 0
   m_Name: TriangleWoodBlock
   m_TagString: Untagged
@@ -116,7 +116,7 @@ PolygonCollider2D:
       - {x: 0.5, y: -0.5}
       - {x: 0.5, y: -0.4947568}
       - {x: -0.48329735, y: 0.49807906}
---- !u!114 &2482437466755443605
+--- !u!114 &6094141448614656172
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,6 +125,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2803914101115262473}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7dbf317db0f8c340abaee6a11f6b3d0, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c94d2aeebb812542b50c6e773b974dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

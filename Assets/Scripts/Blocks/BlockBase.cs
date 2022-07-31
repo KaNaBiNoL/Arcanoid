@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = System.Random;
 
-public class Block : MonoBehaviour
+public abstract class BlockBase : MonoBehaviour
 {
     
     #region Unity lifecycle
@@ -19,8 +19,16 @@ public class Block : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        Destroy(gameObject);
+        TouchWithBall(col);
     }
+
+    #endregion
+
+
+    #region Protected methods
+
+    protected abstract void TouchWithBall(Collision2D col);
+
 
     #endregion
 }
