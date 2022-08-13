@@ -11,14 +11,17 @@ public abstract class BlockBase : MonoBehaviour
     public event Action<BlockBase> OnDestroyed;
 
     #endregion
+
+
     #region Unity lifecycle
 
     private void Awake()
     {
-        
     }
 
     #endregion
+
+
     #region Unity lifecycle
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -42,7 +45,6 @@ public abstract class BlockBase : MonoBehaviour
     #region Protected methods
 
     protected abstract void TouchWithBall(Collision2D col);
-
 
     #endregion
 }

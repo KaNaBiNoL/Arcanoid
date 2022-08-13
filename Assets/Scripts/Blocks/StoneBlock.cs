@@ -7,12 +7,11 @@ public class StoneBlock : BlockBase
 {
     #region Variables
 
-    
     [SerializeField] private Sprite _middleHpSprite;
     [SerializeField] private Sprite _lowHpSprite;
     private int _hp = 3;
     private SpriteRenderer image;
-    
+
     #endregion
 
 
@@ -24,13 +23,12 @@ public class StoneBlock : BlockBase
     }
 
     #endregion
-    
+
 
     #region Protected methods
 
     protected override void TouchWithBall(Collision2D col)
     {
-        
         switch (_hp)
         {
             case 3:
@@ -41,11 +39,9 @@ public class StoneBlock : BlockBase
                 break;
             case 1:
                 Destroy(gameObject);
+                GUI.Instance.IncrementScore(400);
                 break;
-
         }
-            
-            
     }
 
     #endregion
@@ -55,11 +51,9 @@ public class StoneBlock : BlockBase
 
     private void TakeDamage(Sprite sprite)
     {
-         image.sprite = sprite;
+        image.sprite = sprite;
         _hp--;
     }
 
     #endregion
 }
-
-

@@ -57,8 +57,8 @@ public class PauseManager : SingletonMonoBehaviour<PauseManager>
 
     private void RestartButtonClicked()
     {
-        
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        SceneManager.LoadScene(0);
         TogglePause();
     }
 

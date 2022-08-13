@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class GameManager : SingletonMonoBehaviour<GameManager>
@@ -6,6 +7,8 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     [SerializeField] private Ball _ball;
     [SerializeField] private GameObject _winPanel;
+    [SerializeField] private TextMeshProUGUI _levelScoreLabel;
+    
     private bool _isStarted = false;
 
     #endregion
@@ -46,5 +49,6 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     {
         PauseManager.Instance.TogglePause();
         _winPanel.SetActive(true);
+        _levelScoreLabel.text = $"Your Score:{GUI.Instance.Score}";
     }
 }
