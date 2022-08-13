@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : SingletonMonoBehaviour<GameManager>
 {
     #region Variables
 
@@ -16,6 +16,11 @@ public class GameManager : MonoBehaviour
 
 
     #region  Unity lifecycle
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
 
     private void Update()
     {

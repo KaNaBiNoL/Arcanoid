@@ -12,14 +12,19 @@ public class StoneBlock : BlockBase
     [SerializeField] private Sprite _lowHpSprite;
     private int _hp = 3;
     private SpriteRenderer image;
+    
     #endregion
 
+
+    #region Unity lifecycle
 
     private void Start()
     {
         image = gameObject.GetComponent<SpriteRenderer>();
     }
 
+    #endregion
+    
 
     #region Protected methods
 
@@ -56,3 +61,5 @@ public class StoneBlock : BlockBase
 
     #endregion
 }
+
+
