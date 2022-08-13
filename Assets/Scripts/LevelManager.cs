@@ -1,33 +1,42 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelManager : SingletonMonoBehaviour<LevelManager>
 {
     #region Variables
 
-    [SerializeField] private GameObject _borders;
-    [SerializeField] private GameObject _bottomBorder;
-    
+    private int _blocksCount;
+
 
     #endregion
 
 
     #region Unity lifecycle
 
-    private void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-        DontDestroyOnLoad(_borders);
-    }
-
-    private void Update()
+    private void Start()
     {
         BlockBase[] blocks = FindObjectsOfType<BlockBase>();
-        if (blocks.Length == 0)
+        _blocksCount = blocks.Length;
+
+        foreach (BlockBase block in blocks)
         {
-            Debug.Log("Win");
+            Debug.Log($"Subscribe on block '{block.gameObject.name}'");
+            block.OnDestroyed += BlockDestroyed;
+        }
+
+    }
+
+    #endregion
+
+
+    #region Private methods
+
+    private void BlockDestroyed(BlockBase block)
+    {
+        block.OnDestroyed -= BlockDestroyed;
+        _blocksCount--;
+        if (_blocksCount == 0)
+        {
+            GameManager.Instance.PerformWin();
         }
     }
 

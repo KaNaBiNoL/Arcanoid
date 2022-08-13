@@ -23,9 +23,9 @@ public class PauseManager : SingletonMonoBehaviour<PauseManager>
    #endregion
 
 
-   #region Private methods
+   #region Public methods
 
-   private void TogglePause()
+   public void TogglePause()
    {
       _isPaused = !_isPaused;
       Time.timeScale = _isPaused ? 0 : 1;

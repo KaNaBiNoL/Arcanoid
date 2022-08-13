@@ -1,7 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using DefaultNamespace;
 using UnityEngine;
 
 public class GameManager : SingletonMonoBehaviour<GameManager>
@@ -9,18 +5,13 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     #region Variables
 
     [SerializeField] private Ball _ball;
-    
+    [SerializeField] private GameObject _winPanel;
     private bool _isStarted = false;
-    
+
     #endregion
 
 
-    #region  Unity lifecycle
-
-    private void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
+    #region Unity lifecycle
 
     private void Update()
     {
@@ -32,11 +23,10 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         _ball.MoveWithPad();
 
         if (Input.GetMouseButtonDown(0))
-            {
-                StartBall();
-                _ball.StartMove();
-            }
-        
+        {
+            StartBall();
+            _ball.StartMove();
+        }
     }
 
     #endregion
@@ -44,14 +34,17 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     #region Private methods
 
-    
-
     private void StartBall()
     {
         _isStarted = true;
     }
 
     #endregion
-    
-    
+
+
+    public void PerformWin()
+    {
+        PauseManager.Instance.TogglePause();
+        _winPanel.SetActive(true);
+    }
 }
