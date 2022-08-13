@@ -1,22 +1,23 @@
 ﻿using System;
 using UnityEngine;
 
-namespace DefaultNamespace
-{
-    public class Pad : MonoBehaviour
+ public class Pad : MonoBehaviour
     {
         #region Unity lifecycle
 
         private void Update()
         {
-            Vector3 mousePositionInPixels = Input.mousePosition;
-            Vector3 mousePositionInUnits = Camera.main.ScreenToWorldPoint(mousePositionInPixels);
+            if (PauseManager.Instance._isPaused == false)
+            {
+                Vector3 mousePositionInPixels = Input.mousePosition;
+                Vector3 mousePositionInUnits = Camera.main.ScreenToWorldPoint(mousePositionInPixels);
 
-            Vector3 currentPosition = transform.position;
-            currentPosition.x = mousePositionInUnits.x;
-            transform.position = currentPosition;
+                Vector3 currentPosition = transform.position;
+                currentPosition.x = mousePositionInUnits.x;
+                transform.position = currentPosition;
+            }
+            
         }
 
         #endregion
     }
-}
