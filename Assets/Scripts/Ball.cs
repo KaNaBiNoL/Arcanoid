@@ -5,12 +5,16 @@ public class Ball : MonoBehaviour
 {
     #region Variables
 
+    [Header("Ball")]
     [SerializeField] private Rigidbody2D _rb;
     [SerializeField] private Vector2 _startDirection;
+    [SerializeField] private float _minSpeed;
+
     [SerializeField] private Pad _pad;
 
     private Vector3 _startPosition;
     private bool _isStarted;
+
     #endregion
 
 
@@ -23,13 +27,13 @@ public class Ball : MonoBehaviour
 
     private void Update()
     {
-        if ( (_isStarted))
+        if ((_isStarted))
         {
             return;
         }
-        
+
         MoveWithPad();
-        
+
         if (Input.GetMouseButtonDown(0))
         {
             StartBall();
@@ -37,6 +41,8 @@ public class Ball : MonoBehaviour
     }
 
     #endregion
+
+
     #region Public methods
 
     public void MoveWithPad()
@@ -57,6 +63,18 @@ public class Ball : MonoBehaviour
         _isStarted = false;
         _rb.velocity = Vector2.zero;
         transform.position = _startPosition;
+    }
+
+    public void ChangeSpeed(float speedMultiplier)
+    {
+        Vector2 velocity = _rb.velocity;
+        float velocityMagnitude = velocity.magnitude;
+        velocityMagnitude *= speedMultiplier;
+
+        if (velocityMagnitude < _minSpeed)
+        {
+            velocityMagnitude = _minSpeed;
+        }
     }
 
     #endregion

@@ -12,12 +12,12 @@ TagManager:
   - BackGround
   - Water
   - UI
-  - Ball & Platform
+  - Platform
   - Destructable Objects
   - GUI
-  - 
-  - 
-  - 
+  - PickUp
+  - Borders
+  - Ball
   - 
   - 
   - 

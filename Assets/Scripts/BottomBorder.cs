@@ -11,5 +11,10 @@ public class BottomBorder : MonoBehaviour
         {
             GameManager.Instance.LoseLife();
         }
+        else
+        {
+            Destroy(col.gameObject);
+        }
+            
     }
 }

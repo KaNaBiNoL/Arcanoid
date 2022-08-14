@@ -397,6 +397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LargeRectWoodBlock (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7263946144975076050, guid: d4c5ac2bb1afa0944adfd62c89c8b882, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4c5ac2bb1afa0944adfd62c89c8b882, type: 3}
 --- !u!1 &78558958
@@ -567,6 +571,10 @@ PrefabInstance:
     - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_Name
       value: TriangleWoodBlock (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5525066171473666612, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_RootOrder
@@ -939,6 +947,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodBlock (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3110974471233627130, guid: e8abde42fce50304dae9741d5b0c0c12, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8abde42fce50304dae9741d5b0c0c12, type: 3}
 --- !u!4 &224300525 stripped
@@ -956,6 +968,10 @@ PrefabInstance:
     - target: {fileID: 4468312606177784250, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
       propertyPath: m_Name
       value: RectStoneBlock (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4468312606177784250, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5789611762801603284, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
       propertyPath: m_RootOrder
@@ -1014,6 +1030,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TriangleWoodBlock (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5525066171473666612, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -1070,7 +1090,7 @@ GameObject:
   m_Component:
   - component: {fileID: 247296717}
   - component: {fileID: 247296718}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Right Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1178,6 +1198,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LargeRectWoodBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 7263946144975076050, guid: d4c5ac2bb1afa0944adfd62c89c8b882, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4c5ac2bb1afa0944adfd62c89c8b882, type: 3}
 --- !u!1001 &329247096
@@ -1234,6 +1258,10 @@ PrefabInstance:
     - target: {fileID: 3110974471233627130, guid: e8abde42fce50304dae9741d5b0c0c12, type: 3}
       propertyPath: m_Name
       value: WoodBlock (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110974471233627130, guid: e8abde42fce50304dae9741d5b0c0c12, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8abde42fce50304dae9741d5b0c0c12, type: 3}
@@ -1386,6 +1414,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodBlock (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3110974471233627130, guid: e8abde42fce50304dae9741d5b0c0c12, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8abde42fce50304dae9741d5b0c0c12, type: 3}
 --- !u!4 &424138290 stripped
@@ -1408,6 +1440,10 @@ PrefabInstance:
     - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_Name
       value: TriangleWoodBlock (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5525066171473666612, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_RootOrder
@@ -1757,6 +1793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RectStoneBlock (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4468312606177784250, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5789611762801603284, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -1813,6 +1853,10 @@ PrefabInstance:
     - target: {fileID: 4468312606177784250, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
       propertyPath: m_Name
       value: RectStoneBlock (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4468312606177784250, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5789611762801603284, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
       propertyPath: m_RootOrder
@@ -2230,7 +2274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 799591315}
   - component: {fileID: 799591316}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Top Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2546,6 +2590,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RectStoneBlock (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4468312606177784250, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5789611762801603284, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -2859,6 +2907,10 @@ PrefabInstance:
     - target: {fileID: 4468312606177784250, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
       propertyPath: m_Name
       value: RectStoneBlock (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4468312606177784250, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5789611762801603284, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
       propertyPath: m_RootOrder
@@ -3192,7 +3244,7 @@ GameObject:
   - component: {fileID: 1118742931}
   - component: {fileID: 1118742932}
   - component: {fileID: 1118742933}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bottom Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3436,7 +3488,7 @@ GameObject:
   - component: {fileID: 1256650686}
   - component: {fileID: 1256650683}
   - component: {fileID: 1256650682}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Ball
   m_TagString: Ball
   m_Icon: {fileID: 0}
@@ -3560,7 +3612,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 1256650682}
-  _startDirection: {x: 2, y: 5}
+  _startDirection: {x: 1.8, y: 10}
+  _minSpeed: 0
   _pad: {fileID: 1569560787}
 --- !u!1 &1339213276
 GameObject:
@@ -3766,6 +3819,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TriangleWoodBlock (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5525066171473666612, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -3822,6 +3879,10 @@ PrefabInstance:
     - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_Name
       value: TriangleWoodBlock (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5525066171473666612, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_RootOrder
@@ -4001,6 +4062,10 @@ PrefabInstance:
     - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_Name
       value: TriangleWoodBlock (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5525066171473666612, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_RootOrder
@@ -4203,6 +4268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RectStoneBlock (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4468312606177784250, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5789611762801603284, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -4304,6 +4373,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodBlock (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3110974471233627130, guid: e8abde42fce50304dae9741d5b0c0c12, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8abde42fce50304dae9741d5b0c0c12, type: 3}
 --- !u!4 &1611602201 stripped
@@ -4320,7 +4393,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1617011029}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Borders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4356,6 +4429,10 @@ PrefabInstance:
     - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_Name
       value: TriangleWoodBlock (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5525066171473666612, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_RootOrder
@@ -4458,6 +4535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodBlock (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3110974471233627130, guid: e8abde42fce50304dae9741d5b0c0c12, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8abde42fce50304dae9741d5b0c0c12, type: 3}
 --- !u!4 &1640023824 stripped
@@ -4480,6 +4561,10 @@ PrefabInstance:
     - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_Name
       value: TriangleWoodBlock (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5525066171473666612, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_RootOrder
@@ -4632,7 +4717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1784170710
 Transform:
   m_ObjectHideFlags: 0
@@ -4860,6 +4945,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TriangleWoodBlock (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5525066171473666612, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -4917,6 +5006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TriangleWoodBlock (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5525066171473666612, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -4973,6 +5066,10 @@ PrefabInstance:
     - target: {fileID: 4468312606177784250, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
       propertyPath: m_Name
       value: RectStoneBlock (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4468312606177784250, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5789611762801603284, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
       propertyPath: m_RootOrder
@@ -5256,6 +5353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodBlock (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3110974471233627130, guid: e8abde42fce50304dae9741d5b0c0c12, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8abde42fce50304dae9741d5b0c0c12, type: 3}
 --- !u!4 &1971267024 stripped
@@ -5322,6 +5423,10 @@ PrefabInstance:
     - target: {fileID: 3110974471233627130, guid: e8abde42fce50304dae9741d5b0c0c12, type: 3}
       propertyPath: m_Name
       value: WoodBlock (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3110974471233627130, guid: e8abde42fce50304dae9741d5b0c0c12, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8abde42fce50304dae9741d5b0c0c12, type: 3}
@@ -5412,7 +5517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2074974769}
   - component: {fileID: 2074974770}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Left Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5475,6 +5580,10 @@ PrefabInstance:
     - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_Name
       value: TriangleWoodBlock (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5525066171473666612, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_RootOrder
@@ -5655,6 +5764,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RectStoneBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 4468312606177784250, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5789611762801603284, guid: 5aad39fb6386910439f986f10364b34f, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -5802,6 +5915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 3110974471233627130, guid: e8abde42fce50304dae9741d5b0c0c12, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8abde42fce50304dae9741d5b0c0c12, type: 3}
 --- !u!114 &3397453454065812049
@@ -5903,6 +6020,10 @@ PrefabInstance:
     - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_Name
       value: TriangleWoodBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803914101115262473, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5525066171473666612, guid: 258ab0947c01e824c9ae8600cc98d313, type: 3}
       propertyPath: m_RootOrder
