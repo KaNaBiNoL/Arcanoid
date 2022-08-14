@@ -7,6 +7,9 @@ public class BigWoodBlock : BlockBase
 {
     #region Variables
 
+    [Header("Block")]
+    [SerializeField] private int _addedScore;
+
     [SerializeField] private Sprite _damagedHp;
     private SpriteRenderer image;
     private int _hp = 2;
@@ -36,7 +39,7 @@ public class BigWoodBlock : BlockBase
         else if (_hp == 1)
         {
             Destroy(gameObject);
-            GUI.Instance.IncrementScore(300);
+            HUD.Instance.IncrementScore(_addedScore);
         }
     }
 }

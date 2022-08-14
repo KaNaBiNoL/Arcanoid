@@ -5,12 +5,12 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 {
     #region Variables
 
-    [SerializeField] private Ball _ball;
     [SerializeField] private GameObject _winPanel;
-    [SerializeField] private TextMeshProUGUI _levelScoreLabel;
-    
-    private bool _isStarted = false;
+    [SerializeField] private GameObject _losePanel;
+    [SerializeField] private TextMeshProUGUI _winLevelScoreLabel;
+    [SerializeField] private TextMeshProUGUI _loseLevelScoreLabel;
 
+    public int _playerHealth = 3;
     #endregion
 
 
@@ -18,18 +18,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     private void Update()
     {
-        if (_isStarted)
-        {
-            return;
-        }
-
-        _ball.MoveWithPad();
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            StartBall();
-            _ball.StartMove();
-        }
+        
     }
 
     #endregion
@@ -37,18 +26,36 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     #region Private methods
 
-    private void StartBall()
-    {
-        _isStarted = true;
-    }
-
     #endregion
 
 
     public void PerformWin()
     {
+        if ( (_winPanel != null))
+        {
+            PauseManager.Instance.TogglePause();
+            _winPanel.SetActive(true);
+            _winLevelScoreLabel.text = $"Your Score:{HUD.Instance.Score}";
+        }
+        
+    }
+
+    public void PerformLose()
+    {
         PauseManager.Instance.TogglePause();
-        _winPanel.SetActive(true);
-        _levelScoreLabel.text = $"Your Score:{GUI.Instance.Score}";
+        _losePanel.SetActive(true);
+        _loseLevelScoreLabel.text = $"Your Score:{HUD.Instance.Score}";
+    }
+
+    public void LoseLife()
+    {
+        _playerHealth--;
+        FindObjectOfType<Ball>().ToDefaultState();
+        
+        if (_playerHealth == 0)
+        {
+            PerformLose();
+        }
+        
     }
 }

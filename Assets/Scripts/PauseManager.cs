@@ -59,7 +59,7 @@ public class PauseManager : SingletonMonoBehaviour<PauseManager>
     {
 
         SceneManager.LoadScene(0);
-        TogglePause();
+        _pausePanel.SetActive(false);
     }
 
     private void ContinueButtonClicked()

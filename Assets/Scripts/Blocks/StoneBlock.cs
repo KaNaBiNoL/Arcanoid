@@ -7,6 +7,9 @@ public class StoneBlock : BlockBase
 {
     #region Variables
 
+    [Header("Block")]
+    [SerializeField] private int _addedScore;
+
     [SerializeField] private Sprite _middleHpSprite;
     [SerializeField] private Sprite _lowHpSprite;
     private int _hp = 3;
@@ -39,7 +42,7 @@ public class StoneBlock : BlockBase
                 break;
             case 1:
                 Destroy(gameObject);
-                GUI.Instance.IncrementScore(400);
+                HUD.Instance.IncrementScore(_addedScore);
                 break;
         }
     }
