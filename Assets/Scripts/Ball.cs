@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Ball : MonoBehaviour
 {
@@ -7,13 +8,19 @@ public class Ball : MonoBehaviour
 
     [Header("Ball")]
     [SerializeField] private Rigidbody2D _rb;
-    [SerializeField] private Vector2 _startDirection;
+    [SerializeField] private float _normalBallSpeed;
     [SerializeField] private float _minSpeed;
+    [SerializeField] private float _maxSpeed;
+    [SerializeField] private float _xMaxDirection;
+    [SerializeField] private float _xMinDirection;
+    [SerializeField] private float _yMaxDirection;
+    [SerializeField] private float _yMinDirection;
 
     [SerializeField] private Pad _pad;
 
     private Vector3 _startPosition;
     private bool _isStarted;
+    private Vector2 _startDirection;
 
     #endregion
 
@@ -55,7 +62,7 @@ public class Ball : MonoBehaviour
 
     public void StartMove()
     {
-        _rb.velocity = _startDirection;
+        _rb.velocity = GetRandomDirection();
     }
 
     public void ToDefaultState()
@@ -75,6 +82,12 @@ public class Ball : MonoBehaviour
         {
             velocityMagnitude = _minSpeed;
         }
+        if (velocityMagnitude > _maxSpeed)
+        {
+            velocityMagnitude = _maxSpeed;
+        }
+
+        _rb.velocity = velocity.normalized * velocityMagnitude;
     }
 
     #endregion
@@ -86,6 +99,15 @@ public class Ball : MonoBehaviour
     {
         _isStarted = true;
         StartMove();
+    }
+
+    private Vector2 GetRandomDirection()
+    {
+        Vector2 randomDirection = new Vector2(Random.Range(_xMinDirection, _xMaxDirection),
+            Random.Range(_yMinDirection, _yMaxDirection));
+        _startDirection = randomDirection.normalized;
+        _startDirection *= _normalBallSpeed;
+        return _startDirection;
     }
 
     #endregion
