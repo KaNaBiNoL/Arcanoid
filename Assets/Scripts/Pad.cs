@@ -3,6 +3,15 @@ using UnityEngine;
 
 public class Pad : MonoBehaviour
 {
+    #region Variables
+
+    [Header("Pad")]
+    [SerializeField] private float _maxScale;
+    [SerializeField] private float _minScale;
+
+    #endregion
+
+
     #region Unity lifecycle
 
     private void Update()
@@ -19,4 +28,23 @@ public class Pad : MonoBehaviour
     }
 
     #endregion
+
+
+    public void ChangeWidth(float scaleMultiplier)
+    {
+        Vector3 transformLocalScale = transform.localScale;
+        transformLocalScale.x *= scaleMultiplier;
+       
+        if (transformLocalScale.x > _maxScale)
+        {
+            transformLocalScale.x = _maxScale;
+        }
+
+        if (transformLocalScale.x < _minScale)
+        {
+            transformLocalScale.x = _minScale;
+        }
+
+        transform.localScale = transformLocalScale;
+    }
 }

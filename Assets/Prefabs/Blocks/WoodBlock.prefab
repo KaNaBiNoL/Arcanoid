@@ -124,6 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c94d2aeebb812542b50c6e773b974dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pickUpPrefab: {fileID: 3372070873313879107, guid: 1a9af0f221dc43e4ebdc50824e87f915, type: 3}
+  _pickUpPrefab: {fileID: 2594165334523643682, guid: ef816c06b7597084eab2c21cd97e2c36, type: 3}
   _spawnChance: 1
   _addedScore: 150

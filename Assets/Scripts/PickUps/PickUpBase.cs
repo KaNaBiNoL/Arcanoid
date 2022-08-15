@@ -5,10 +5,13 @@ public abstract class PickUpBase : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D col)
     {
-        ApplyEffect(col);
+        if (col.gameObject.CompareTag(Tags.Pad))
+        {
+            ApplyEffect(col);
+        }
+
         Destroy(gameObject);
     }
 
     protected abstract void ApplyEffect(Collision2D col);
-
 }
