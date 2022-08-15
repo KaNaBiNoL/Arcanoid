@@ -50,6 +50,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     public void LoseLife()
     {
         _playerHealth--;
+        HealthBarController.Instance.SwitchHealthImage();
         FindObjectOfType<Ball>().ToDefaultState();
         
         if (_playerHealth == 0)
