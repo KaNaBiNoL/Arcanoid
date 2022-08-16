@@ -1,28 +1,22 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public abstract class BlockBase : MonoBehaviour
 {
+    #region Variables
+
     [Header("PickUp")]
     [SerializeField] private GameObject _pickUpPrefab;
     [Range(0f, 1f)]
     [SerializeField] private float _spawnChance;
-     
-    #region Events
-
-    public event Action<BlockBase> OnDestroyed;
 
     #endregion
 
 
-    #region Unity lifecycle
+    #region Events
 
-    private void Awake()
-    {
-    }
+    public event Action<BlockBase> OnDestroyed;
 
     #endregion
 

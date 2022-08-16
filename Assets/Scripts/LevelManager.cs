@@ -6,7 +6,6 @@ public class LevelManager : SingletonMonoBehaviour<LevelManager>
 
     private int _blocksCount;
 
-
     #endregion
 
 
@@ -22,7 +21,6 @@ public class LevelManager : SingletonMonoBehaviour<LevelManager>
             Debug.Log($"Subscribe on block '{block.gameObject.name}'");
             block.OnDestroyed += BlockDestroyed;
         }
-
     }
 
     #endregion

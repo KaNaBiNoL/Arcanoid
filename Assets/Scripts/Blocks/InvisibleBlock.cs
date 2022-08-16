@@ -1,16 +1,14 @@
-using UnityEngine;
+﻿using UnityEngine;
 
-public class StoneBlock : BlockBase
+class InvisibleBlock : BlockBase
 {
     #region Variables
 
     [Header("Block")]
     [SerializeField] private int _addedScore;
 
-    [SerializeField] private Sprite _middleHpSprite;
-    [SerializeField] private Sprite _lowHpSprite;
-    private int _hp = 3;
     private SpriteRenderer image;
+    private int _hp = 2;
 
     #endregion
 
@@ -20,6 +18,7 @@ public class StoneBlock : BlockBase
     private void Start()
     {
         image = gameObject.GetComponent<SpriteRenderer>();
+        SetAlpha(0);
     }
 
     #endregion
@@ -31,15 +30,13 @@ public class StoneBlock : BlockBase
     {
         switch (_hp)
         {
-            case 3:
-                TakeDamage(_middleHpSprite);
-                break;
             case 2:
-                TakeDamage(_lowHpSprite);
+                SetAlpha(255);
+                _hp--;
                 break;
             case 1:
-                Destroy(gameObject);
                 HUD.Instance.IncrementScore(_addedScore);
+                Destroy(gameObject);
                 break;
         }
     }
@@ -49,10 +46,11 @@ public class StoneBlock : BlockBase
 
     #region Private methods
 
-    private void TakeDamage(Sprite sprite)
+    private void SetAlpha(int alpha)
     {
-        image.sprite = sprite;
-        _hp--;
+        Color imageColor = image.color;
+        imageColor.a = alpha;
+        image.color = imageColor;
     }
 
     #endregion

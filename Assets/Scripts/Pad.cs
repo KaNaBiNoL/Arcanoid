@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Pad : MonoBehaviour
 {
@@ -30,11 +29,13 @@ public class Pad : MonoBehaviour
     #endregion
 
 
+    #region Public methods
+
     public void ChangeWidth(float scaleMultiplier)
     {
         Vector3 transformLocalScale = transform.localScale;
         transformLocalScale.x *= scaleMultiplier;
-       
+
         if (transformLocalScale.x > _maxScale)
         {
             transformLocalScale.x = _maxScale;
@@ -47,4 +48,6 @@ public class Pad : MonoBehaviour
 
         transform.localScale = transformLocalScale;
     }
+
+    #endregion
 }

@@ -1,5 +1,3 @@
-using System;
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -34,7 +32,6 @@ public class PauseManager : SingletonMonoBehaviour<PauseManager>
         {
             TogglePause();
             _pausePanel.SetActive(true);
-            
         }
     }
 
@@ -45,7 +42,6 @@ public class PauseManager : SingletonMonoBehaviour<PauseManager>
 
     public void TogglePause()
     {
-        
         _isPaused = !_isPaused;
         Time.timeScale = _isPaused ? 0 : 1;
     }
@@ -57,7 +53,6 @@ public class PauseManager : SingletonMonoBehaviour<PauseManager>
 
     private void RestartButtonClicked()
     {
-
         SceneManager.LoadScene(0);
         _pausePanel.SetActive(false);
     }

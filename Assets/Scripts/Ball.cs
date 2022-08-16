@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class Ball : MonoBehaviour
@@ -82,6 +81,7 @@ public class Ball : MonoBehaviour
         {
             velocityMagnitude = _minSpeed;
         }
+
         if (velocityMagnitude > _maxSpeed)
         {
             velocityMagnitude = _maxSpeed;

@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BigWoodBlock : BlockBase
@@ -27,6 +24,8 @@ public class BigWoodBlock : BlockBase
     #endregion
 
 
+    #region Protected methods
+
     protected override void TouchWithBall(Collision2D col)
     {
         if (_hp == 2)
@@ -42,4 +41,6 @@ public class BigWoodBlock : BlockBase
             HUD.Instance.IncrementScore(_addedScore);
         }
     }
+
+    #endregion
 }

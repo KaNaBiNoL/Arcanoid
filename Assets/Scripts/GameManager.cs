@@ -11,33 +11,20 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     [SerializeField] private TextMeshProUGUI _loseLevelScoreLabel;
 
     public int _playerHealth = 3;
-    #endregion
-
-
-    #region Unity lifecycle
-
-    private void Update()
-    {
-        
-    }
 
     #endregion
 
 
-    #region Private methods
-
-    #endregion
-
+    #region Public methods
 
     public void PerformWin()
     {
-        if ( (_winPanel != null))
+        if ((_winPanel != null))
         {
             PauseManager.Instance.TogglePause();
             _winPanel.SetActive(true);
             _winLevelScoreLabel.text = $"Your Score:{HUD.Instance.Score}";
         }
-        
     }
 
     public void PerformLose()
@@ -52,11 +39,12 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
         _playerHealth--;
         HealthBarController.Instance.SwitchHealthImage();
         FindObjectOfType<Ball>().ToDefaultState();
-        
+
         if (_playerHealth == 0)
         {
             PerformLose();
         }
-        
     }
+
+    #endregion
 }
